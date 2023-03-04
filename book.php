@@ -16,12 +16,12 @@ $link = null;
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="style.php">
 
 </head>
 <body>
 <h3>Book Data</h3>
-<table>
+<table class="content-table">
     <thead>
     <tr>
         <th>ISBN</th>
