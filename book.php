@@ -45,6 +45,11 @@ $link = null;
         echo '</tr>';
     }
     ?>
+<script>
+$(document).ready(function () {
+    $('#dttable').DataTable();
+}); 
+</script>
 </body>
 </html>
     </tbody>
