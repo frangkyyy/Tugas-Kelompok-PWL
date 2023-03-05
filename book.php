@@ -23,7 +23,7 @@ $link = null;
 </head>
 <body>
 <h3>Book Data</h3>
-<table class="content-table">
+<table class="content-table" id="dttable">
     <thead>
     <tr>
         <th>ISBN</th>
