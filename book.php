@@ -34,7 +34,7 @@ $link = null;
         <th>AUTHOR</th>
         <th>PUBLISHER</th>
         <th>PUBLISH YEAR</th>
-        <th>GENRE NAME</th>
+        <th>GENRE</th>
     </tr>
     </thead>
     <tbody>
