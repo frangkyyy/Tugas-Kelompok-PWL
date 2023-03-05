@@ -30,6 +30,7 @@ $link = null;
             echo '<td>'. $book['author'] . '</td>';
             echo '<td>'. $book['publisher'] . '</td>';
             echo '<td>'. $book['publish_year'] . '</td>';
+            echo '<td>'. $book['name'] . '</td>'; 
             echo '</tr>';
         }
         ?>
