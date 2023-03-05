@@ -18,6 +18,7 @@ $link = null;
             <th>AUTHOR</th>
             <th>PUBLISHER</th>
             <th>PUBLISH YEAR</th>
+            <th>GENRE NAME</th>
         </tr>
     </thead>
     <tbody>
