@@ -2,7 +2,7 @@
 $link = new PDO('mysql:host=localhost;dbname=pwl20222', 'root', '');
 $link->setAttribute(PDO::ATTR_AUTOCOMMIT, false);
 $link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$query = 'SELECT isbn,title,author,publisher,publish_year, genre.name FROM book JOIN genre ON genre.id = book.genre_id';
+$query = 'SELECT isbn, title, author, publisher, publish_year, name FROM book INNER JOIN genre ON genre.Id = book.genre_id';
 $stmt = $link -> prepare($query);
 $stmt->execute();
 $result = $stmt -> fetchAll();
