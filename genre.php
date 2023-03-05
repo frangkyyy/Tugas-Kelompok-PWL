@@ -22,3 +22,29 @@ $link = null;
     <link rel="stylesheet" type="text/css" href ="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap4.min.css">
 </head>
+<body>
+<table id="dttable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        foreach ($result as $genre){
+            echo '<tr>';
+            echo '<td>'. $genre['id'] . '</td>';
+            echo '<td>'. $genre['name'] . '</td>';
+            echo '</tr>';
+        }
+        ?>
+    </tbody>
+</table>
+<script>
+$(document).ready(function () {
+    $('#dttable').DataTable();
+}); 
+</script>
+</body>
+</html>
