@@ -17,6 +17,7 @@ $link = null;
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.php">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
 </head>
 <body>
