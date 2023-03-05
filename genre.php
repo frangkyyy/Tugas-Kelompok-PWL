@@ -1,10 +1,11 @@
 <?php
-$link = new PDO(dsn: 'mysql:host=localhost;dbname=pwl20222', username: 'root', password: 'root_password');
-$link->setAttribute(attribute: PDO::ATTR_AUTOCOMMIT, value: false);
-$link->setAttribute(attribute: PDO::ATTR_ERRMODE, value: PDO::ERRMODE_EXCEPTION);
-$query = 'SELECT id, name FROM genre';
-$stmt = $link->prepare($query);
-$result = $stmt->fetchAll();
+$link = new PDO('mysql:host=localhost;dbname=mydb', 'root', '');
+$link->setAttribute(PDO::ATTR_AUTOCOMMIT, false);
+$link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$query = 'SELECT id, name FROM genre ';
+$stmt = $link -> prepare($query);
+$stmt->execute();
+$result = $stmt -> fetchAll();
 $link = null;
 ?>
 
